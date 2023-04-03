@@ -8,12 +8,13 @@ public class ShapeTest {
         Shape d = new Triangle();
         Shape e = new Rhombus();
         Shape f = new Rectangle();
-        NamePrinter g = new NamePrinter(a);
-        NamePrinter h = new NamePrinter(b);
-        NamePrinter i = new NamePrinter(c);
-        NamePrinter j = new NamePrinter(d);
-        NamePrinter k = new NamePrinter(e);
-        NamePrinter l = new NamePrinter(f);
+        System.out.println(NamePrinter.getInstance().printName(a));
+        System.out.println(NamePrinter.getInstance().printName(b));
+        System.out.println(NamePrinter.getInstance().printName(c));
+        System.out.println(NamePrinter.getInstance().printName(d));
+        System.out.println(NamePrinter.getInstance().printName(e));
+        System.out.println(NamePrinter.getInstance().printName(f));
+
 
 
     }

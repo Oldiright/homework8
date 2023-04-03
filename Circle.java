@@ -7,7 +7,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    public String toString() {
+    public String getType() {
         return "This is a " + shapeName;
     }
 }

@@ -1,9 +1,17 @@
 package homework8;
 
-public class NamePrinter {
-    public NamePrinter(Object a) {
-        System.out.println(a.toString());
+class NamePrinter {
+    private static NamePrinter instance = new NamePrinter();
 
+    private NamePrinter() {
 
     }
+
+    public static NamePrinter getInstance() {
+        return instance;
+    }
+     public String printName(Shape a) {
+        return a.getType();
+     }
+
 }
